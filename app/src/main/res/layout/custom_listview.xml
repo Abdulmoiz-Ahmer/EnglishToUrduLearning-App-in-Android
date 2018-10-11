@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:weightSum="2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="20dp"
+            android:layout_height="match_parent"
+            android:layout_margin="0dp"
+            android:background="@color/emerald"
+            android:padding="0dp"></LinearLayout>
+
+        <ImageView
+            android:layout_weight="0.01"
+            android:id="@+id/image_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="0dp"
+            android:padding="0dp"
+            android:src="@drawable/aunt_family" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1.98"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/englishVersion_txt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:text="Name"
+                android:layout_marginTop="5dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:textColor="@color/emerald"
+                android:textSize="20sp"
+            />
+
+            <TextView
+                android:id="@+id/urduVersion_txt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:layout_below="@+id/englishVersion_txt"
+                android:gravity="right"
+                android:text="نام"
+                android:textColor="@color/sunflower"
+                android:textSize="20sp"
+      />
+
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_weight="0.01"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_play_arrow_black_48dp" />
+    </LinearLayout>
+</android.support.v7.widget.CardView>
